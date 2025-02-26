@@ -1,44 +1,11 @@
 # Vegetation Cover Modeling
-*Author*: Timm Nawrocki, Alaska Center for Conservation Science  
-*Created On*: 2018-08-20 
-*Last Updated:* 2019-11-18 
 *Description*: Scripts and script-tools for quantitative mapping of plant species foliar cover.  
 
 ## Getting Started
 These instructions will enable you to run the Vegetation Cover Modeling scripts. The scripts integrate multiple systems: MySQL database, Google Earth Engine, python-based ArcGIS Pro toolbox, jupyter notebooks optimized for Google Cloud Compute Engine, and R scripts executable in R or RStudio. The ArcGIS python environment must be set up with python libraries that are not included in the ArcGIS python installation by default. Additional python environments using the Anaconda 3 distribution can be set up on local or virtual machines.
 
 All of the analyses are scripted to be reproducible and abstracted to be applicable beyond this particular project. Because scripts are abstracted, they will not run without being properly parameterized. Inputs and outputs have not therefore been captured in the scripts. Reproducing the results of this study will require proper execution of all scripts. Detailed instructions for each script or tool have been included in this readme file below.
-
-### Prerequisites
-1. ArcGIS Pro 2.2.3+  
-  a. Python 3.5.3+  
-  b. mysql-connecter 2.0.4+  
-  c. os  
-  d. numpy 1.13.3+  
-  e. pandas 0.23.4+  
-2. Geomorphometry and Gradient Metrics ArcGIS Toolbox 2.0+  
-3. TauDEM 5.3.7+  
-4. Access to Google Earth Engine (or create Landsat 8 composites by other means)  
-5. Access to Google Cloud Compute (or create virtual machines by other means)  
-6. Ubuntu 18.04 LTS  
-7. Anaconda 3.7 Build 2019.10  
-  a. Python 3.7.4+  
-  b. os  
-  c. numpy 1.16.5+  
-  d. pandas 0.25.1+  
-  e. seaborn 0.9.0+  
-  f. matplotlib 3.1.1+  
-  g. scikit-learn 0.21.3+  
-  h. xgboost 0.90+  
-  i. GPy 1.9.9+  
-  j. GPyOpt 1.2.5+
-  k. joblib 0.13.2+  
-8. R 3.6.1+  
-  a. sp 1.3-2+  
-  b. raster 3.0-7+  
-  c. rgdal 1.4-7+  
-  d. stringr  
-9. RStudio Server 1.2.5019+  
+ 
 
 ### Installing
 1. Install ArcGIS Pro, [TauDEM](http://hydrology.usu.edu/taudem/taudem5/index.html), [Geomorphometry and Gradient Metrics Toolbox](https://evansmurphy.wixsite.com/evansspatial/arcgis-gradient-metrics-toolbox), and [R](https://www.r-project.org/) in a local environment according to the documentation provided by the originators.
